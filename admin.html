@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="materialize/materialize.min.css">
+
+<title>Shop Lounge - Your favourite shop place</title>
+
+</head>
+
+<body onload="getProduse()">
+
+<!-- TOP MENU -->
+
+<div class="topmenu">
+  <div class="topLogo">
+    <h1><a href="index.html">WebShop</a></h1>
+  </div>
+  <div class="topBtns">
+    <button id="cartBtn" onclick="window.location='cart.html'"><i class="fas fa-shopping-basket"></i>  Your Cart</button>
+    <button id="adminBtn" onclick="window.location='admin.html'"><i class="fas fa-lock"></i>  Admin</button>
+  </div>
+</div>
+
+<!-- PRODUCT LIST -->
+<div id="addProduct">
+  <h1>Add a New Product</h1>
+  <div class="container row">
+    <form onsubmit="addProduct(this,event)" id="productForm">
+      <div class="input-field">
+          <label for="prodImagine">Imagine</label>
+          <input id="prodImagine" name="imagine" type="text" placeholder="Image">
+      </div>
+      <div class="input-field">
+          <label for="prodNume">Nume</label>
+          <input id="prodNume" name="nume" type="text" placeholder="Name">
+      </div>
+      <div class="input-field">
+          <label for="prodPret">Pret</label>
+          <input id="prodPret" name="pret" type="text" placeholder="Price">
+      </div>
+      <div class="input-field">
+          <label for="prodCantitate">Cantitate</label>
+          <input id="prodCantitate" name="cantitate" type="text" placeholder="Quantity">
+      </div>
+      <div class="input-field">
+          <label for="prodDescriere">Descriere</label>
+          <input id="prodDescriere" name="descriere" class="materialize-textarea"></input>
+      </div>
+      <input id="submit" type="submit" value="Add Product" class="buyBtn"/>
+    </form>
+  </div>
+</div>
+
+<div id="adminList">
+  <table>
+    <thead id="adminThead">
+      <th>Photo</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th><button class="buyBtn" onclick="showAddProduct();">Add</button></th>
+    </thead>
+    <tbody id="adminProductList">
+
+    </tbody>
+  </table>
+</div>
+
+<!-- END -->
+
+
+<script src="scripts/admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Shop Lounge - Your favourite shop place</title>
+
+</head>
+
+<body onload="displayCart(); addEvents();">
+
+  <!-- TOP MENU -->
+
+  <div class="topmenu">
+    <div class="topLogo">
+      <h1><a href="index.html">WebShop</a></h1>
+    </div>
+    <div class="topBtns">
+      <button id="cartBtn" onclick="window.location='cart.html'"><i class="fas fa-shopping-basket"></i> Your Cart</button>
+      <button id="adminBtn" onclick="window.location='admin.html'"><i class="fas fa-lock"></i> Admin</button>
+    </div>
+  </div>
+
+
+  <!-- SHOPPING CART -->
+  <div id="cartHeader">
+    <h4>Your shopping cart</h4>
+  </div>
+
+  <div id="shoppingCart">
+    <div id="tableInfo">
+      <table id="itemsTable">
+        <thead>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </thead>
+        <tbody id="shopList">
+
+        </tbody>
+      </table>
+    </div>
+    <div id="cartSummary">
+
+    </div>
+  </div>
+
+
+  <!-- END -->
+
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/detalii.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

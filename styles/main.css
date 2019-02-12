@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Comfortaa|Lobster');
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.topmenu {
+  width: 100%;
+  display: flex;
+  border-bottom: 4px solid #666;
+}
+
+.topLogo {
+  justify-content: center;
+  width: 50%;
+}
+
+.topLogo a {
+  text-decoration: none;
+  color: #00BFFF;
+}
+
+.topLogo h1 {
+  font-family: Lobster;
+  margin-left: 10px;
+  color: #00BFFF;
+}
+
+.topBtns {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topBtns button {
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  background-color: #00BFFF;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+}
+
+#productHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Shade', cursive;
+}
+
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #00BFFF;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+
+.card-content {
+  bottom: 0;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.5;
+  font-family: 'Comfortaa', cursive;
+}
+
+.card-content button {
+  height: 60px;
+  width: 60%;
+  border: 3px solid #00BFFF;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #555;
+  font-family: 'Comfortaa', cursive;
+}
+
+#productDetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+}
+
+#prodImg {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prodImg img {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+
+#prodDetails {
+  font-family: 'Comfortaa', cursive;
+  width: 30%;
+  justify-content: flex-start; 
+}
+
+#prodDetails hr {
+  width: 50%;
+  margin-left: 0px;
+}
+
+#quantityDiv {
+  width: 100%;
+}
+
+#quantityDiv p{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#quantityDiv input{
+  display: inline-block;
+  width: 30px;
+}
+
+#addToCartBtn {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: 3px solid #00BFFF;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #555;
+  font-family: 'Comfortaa', cursive;
+}
+
+#addToCartBtn:hover {
+  cursor: pointer;
+}
+
+#cartHeader {
+  font-family: 'Bungee Shade', cursive;
+}
+
+#shoppingCart {
+  width: 100%;
+  display: flex;
+  font-family: 'Comfortaa', cursive;
+}
+
+#itemsTable thead {
+  text-align: left;
+}
+
+
+#shopList tr {
+  height: 60px;
+}
+
+#shopList tr:nth-child(even){
+  background-color: #ddd;
+}
+
+#tableInfo {
+  width: 70%;
+  margin-right: 40px;
+  transition: 0.3ms;
+}
+
+#tdName {
+  width: 40%;
+}
+
+#tdPrice {
+  width: 20%;
+}
+
+#tdQty {
+  width: 20%;
+}
+
+#tdTotal {
+  width: 20%;
+}
+
+#cartSummary {
+  width: 30%;
+  transition: 0.3ms;
+}
+
+.increase, .decrease {
+  background: none;
+  border: none;
+}
+
+.increase, .decrease:hover {
+  cursor: pointer;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.removeBtn:hover {
+  cursor: pointer;
+}
+
+#cartSummary h5 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.buyBtn {
+  width: 80px;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  background-color: #00BFFF;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+}
+
+#adminList {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  z-index: 10;
+  font-family: 'Comfortaa', cursive;
+}
+
+#adminList table {
+  width: 100%;
+}
+
+#adminThead {
+  text-align: left;
+}
+
+#adminProductList img {
+  max-height: 50px;
+}
+
+#addProduct {
+  visibility: hidden;
+}
+
+#adminProductList tr:nth-child(even){
+  background-color: #eee;
+}
+
+#adminProductList a:hover {
+  cursor: pointer;
+}
+
+.input-field  {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.input-field label {
+  width: 10%;
+}
+
+.input-field input {
+  width: 80%;
+  height: 35px;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 5px;
+  border: 1px solid #444;
+  text-indent: 10px;
+}
+
+
+#addProduct {
+  font-family: 'Comfortaa', cursive;
+}
+
+#addProduct h1{
+  margin-left: 10px;
+}
+
+#productForm {
+  width: 100%;
+}
+
+#submit {
+  width: 100px;
+  margin-left: 10px;
+}
+
+
+/* -- MEDIA QUERRIES -- */
+
+@media only screen and (max-width: 700px) {
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #00BFFF;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+  }
+
+  #productHeader {
+    font-size: 10px;
+  }
+
+  #shoppingCart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tableInfo {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  #cartSummary {
+    font-size: 12px;
+  }
+
+  #cartSummary h5 {
+    font-size: 12px;
+  }
+
+  .removeBtn {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+}
